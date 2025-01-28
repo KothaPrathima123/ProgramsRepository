@@ -21,6 +21,11 @@ public class TraininigInistitute {
 	// SPEL Airthmetic opeation
 	@Value("#{catalog.javaCourseFee + catalog.UICourseFee+  catalog.andriodCourseFee}")
 	private  double   totalCourseFee;
+	
+	/*
+	 * @Value("#{java.fee+ donet.fee + python.fee }") private double totalFee;
+	 */
+	
 	//SPEL Logical opeation
 	@Value("#{catalog.javaCourseFee>5000}")
 	private  boolean isJavaCourseFeeHigh;
