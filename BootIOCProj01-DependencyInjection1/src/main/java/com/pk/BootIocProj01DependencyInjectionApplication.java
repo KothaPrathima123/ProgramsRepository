@@ -1,4 +1,4 @@
-package com.nt;
+package com.pk;
 
 import java.time.LocalDateTime;
 
@@ -8,7 +8,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 
-import com.nt.sbeans.WishMessageGenerator;
+import com.pk.sbeans.WishMessageGenerator;
 
 @SpringBootApplication
 public class BootIocProj01DependencyInjectionApplication {
