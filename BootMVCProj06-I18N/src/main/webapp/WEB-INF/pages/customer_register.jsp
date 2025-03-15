@@ -1,5 +1,6 @@
 <%@ page isELIgnored="false" contentType="text/html; charset=UTF-8"%>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="frm"  %>
+
 <%@taglib uri="http://www.springframework.org/tags" prefix="sp" %>
 <h1  style="color:red;text-align=center"><sp:message code="cust.registration.title"/></h1>
 <br><br>
@@ -21,7 +22,6 @@
     <td>  <input type="submit"  value="<sp:message code="cust.btn.register"></sp:message><">   </td>
   </tr>
 </table>
-
 
 </frm:form>
 <br><br>
