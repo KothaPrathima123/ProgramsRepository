@@ -3,11 +3,11 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
- <bean id="pulsor1" class="com.pk.beans.Bike">
+ <!-- <bean id="pulsor1" class="com.pk.beans.Bike">
  	<property name="id" value="TS10082D"/>
  	<property name="make" value="Bajaj"/>
 	<property name="engineCC" value="150"/>
- </bean>
+ </bean> -->
    <!--       <bean id="pulsor1" class="com.pk.beans.Bike">
  	<property name="id" value="TS10082D"/>
  	<property name="make" value="Bajaj"/>
@@ -15,18 +15,15 @@
  </bean> -->
       
   <!--    <bean id="pulsor2" class="com.pk.beans.Bike" parent="pulsor1">
- 	<property name="id" value="TS1000982D"/> solution1 -->
- 	
- 	
- 	<bean id="basepulsor" class="com.pk.beans.Bike" abstract="true">
+ 	<property name="id" value="TS1000982D"/> solution1 -->	
+ <bean id="basepulsor" class="com.pk.beans.Bike" abstract="false">
  	<property name="make" value="Bajaj"/>
 	<property name="engineCC" value="150"/>
  </bean>
  	<bean id="pulsor1" class="com.pk.beans.Bike" parent="basepulsor">
  	<property name="id" value="TYON2567"></property>
  </bean>
- <bean>
- 	<bean id="pulsor2" class="com.pk.beans.Bike" parent="basepulsor">
+ <bean id="pulsor2" class="com.pk.beans.Bike" parent="basepulsor">
  	<property name="id" value="TYHKJ2567"></property>
  </bean>
 </beans>
