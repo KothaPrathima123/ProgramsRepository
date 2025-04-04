@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-      <bean id="engg" class="com.pk.beans.Engine"/>
+      <bean id="engg1" class="com.pk.beans.Engine"/>
       <bean id="vehicle" class="com.pk.beans.Vehicle">
      <!--  <property name="enggId" value="engg1"></property> -->
      <property name="enggId">
