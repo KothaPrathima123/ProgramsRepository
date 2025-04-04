@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="eng" class="com.pk.beans.Engine">
+</bean>
+<bean id="vehicle" class="com.pk.beans.Vehicle" >
+<property name="beanId" value="12TUOS"/>
+<property name="enggId" ref="eng"/>
+</bean> 
+        
+        
+</beans>
