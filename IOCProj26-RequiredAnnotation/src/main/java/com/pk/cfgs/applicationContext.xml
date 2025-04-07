@@ -10,7 +10,6 @@
 <property name="id" value="123"/>
 <property name="type" value="Person"/>
 </bean>
-<context:annotation-config/>
-
-
+<!-- <context:annotation-config/>-->
+<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
 </beans>
