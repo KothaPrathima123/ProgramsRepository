@@ -4,10 +4,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>nit</groupId>
-  <artifactId>AspectJAOP-AroundAdvice-Proj1</artifactId>
+  <artifactId>AspectJAOP05-AfterAdvice-DiscountCoupon</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>AspectJAOP-AroundAdvice-Proj1</name>
+  <name>AspectJAOP05-AfterAdvice-DiscountCoupon</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -40,9 +40,7 @@
       <artifactId>junit-jupiter-params</artifactId>
       <scope>test</scope>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
-<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
-<dependency>
+     <dependency>
     <groupId>org.aspectj</groupId>
     <artifactId>aspectjrt</artifactId>
     <version>1.9.22.1</version>
@@ -71,7 +69,8 @@
     <version>1.9.22.1</version>
     <scope>runtime</scope>
 </dependency>
-</dependencies>
+    
+  </dependencies>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
