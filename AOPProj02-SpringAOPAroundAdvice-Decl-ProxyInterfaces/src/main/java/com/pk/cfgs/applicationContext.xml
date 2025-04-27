@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="iac" class="com.pk.beans.IntrAmtCalculator"/>
+	<bean id="logAdvice" class="com.pk.aspect.LogAroundAdvice"/>
+	<bean id="pmAdvice" class="com.pk.aspect.PerformanceMonitoringAdvice"/>
+	<bean id="cacheAdvice" class="com.pk.aspect.CacheAdvice"/>
+	 <bean id="pfb" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="target" ref="iac"/>
+        <property name="proxyInterfaces">
+        <list>
+        <value>com.pk.beans.IIntrAmtCalculator</value>
+        </list>
+        </property>
+        <property name="interceptorNames">
+        <list>
+        <value>pmAdvice</value>
+        <value>logAdvice</value>
+        <value>cacheAdvice</value>
+        </list>
+        </property>
+        </bean>
+</beans>
