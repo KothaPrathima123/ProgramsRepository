@@ -1,0 +1,28 @@
+#yml file preparation
+org:
+   nt: 
+      name: HCL
+      addrs:  hyd
+      email:  ram@zyx.com
+      size: 2000
+      pincode: 45456676
+      nickNames: 
+            - india CE
+            - hindustan IT
+            - chennai IT
+      phones:  [9999999, 8888888,7777777 ]
+      
+      fav-colors: 
+           - red
+           - blue
+           - yellow
+      idDetails:        
+           voterId : 454545
+           panNo:  454555455
+           passportNo: 552445566
+      details:
+           hno: 1-2-3/5/6/a
+           street: RK street
+           pincode: 545666
+           landmark:  Reliance towers
+                

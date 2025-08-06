@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+	<bean id="st" class="com.pk.beans.Student">
+		<property name="colors">
+			<list>
+				<value>red</value>
+				<value>blue</value>
+				<!-- <value>1</value>
+				<value>null</value>
+				<value>19.f</value> -->
+			</list>
+		</property>
+		<property name="names">
+		<list>
+		<value>Raja</value>
+		<value>Ram</value>
+		<value>Krishna</value>
+		</list>
+		</property>
+		<property name="phones">
+		<set>
+		<value>+91 78958907</value>
+		<value>5789999</value>
+		</set>
+		</property>
+		<property name="facultySubjects">
+		<map>
+		<entry key="Ravi" value="java"/>
+		<entry key="Raj" value=".NET"/>
+		<entry key="Ram" value="Python">
+		</entry>
+		</map>
+		</property>
+		<property name="facultyPhones">
+		<map>
+		<entry key="Ravi" value="6890900"/>
+		<entry key="Raj" value="5378330"/>
+		<entry key="Ram" value="6282030">
+		</entry>
+		</map>
+		</property>
+	</bean>
+
+
+</beans> 

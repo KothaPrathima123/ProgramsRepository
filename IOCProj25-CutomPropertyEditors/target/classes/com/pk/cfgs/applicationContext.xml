@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="amtDetails" class="com.pk.beans.IntrAmtDetails">
+<property name="principle" value="1999"></property>
+<property name="time" value="12"/>
+<property name="rate" value="3"/>
+</bean>
+<bean id="intrCalculate" class="com.pk.beans.IntrAmtCalculator">
+<property name="details" ref="amtDetails"/>
+</bean>
+<!-- <bean id="intrCalculate" class="com.pk.beans.IntrAmtCalculator">
+<property name="details" value="1002,2,4"/>
+</bean> -->
+
+</beans>
