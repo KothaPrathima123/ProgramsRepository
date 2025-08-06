@@ -1,0 +1,39 @@
+@charset "ISO-8859-1";
+
+.div1{
+   background-color:#f4f4f4;
+   padding:13px 70px 90px 70px;
+   border-radius:12px;
+  }
+  .div2{
+  font-weight:bold;
+  font-size:30px;
+  text-align:center;
+  }
+  .div3{
+  text-align:center;
+  
+  }
+  #span{
+   text-align:center;
+  }
+  
+  body{display: flex;
+  justify-content: center; 
+  align-items: center; }
+  #link{
+    display:inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10px 10px;
+    margin: 9px 0;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 1em;
+    transition:background-color 0.5s;
+    box-shadow:5px 5px 5px rgba(0,0,0,0.6);
+  }
+  #link:hover{
+  background-color:green;
+  }

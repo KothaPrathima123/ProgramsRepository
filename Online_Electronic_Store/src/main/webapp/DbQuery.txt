@@ -1,0 +1,14 @@
+Productinfo
+===============
+create table productinfo as select * from product where 1=2;
+
+insert into productinfo values('p101','watch','Apple','3000.00','9');
+insert into productinfo values('p102','Laptop','Lenovo','40000.00','7');
+insert into productinfo values('p103','Waterpurifier','Aquaguard','5000','10');
+insert into productinfo values('p104','Mobile','Realme','8000','3');
+insert into productinfo values('p105','Mouse','HP','460.00','5');
+
+
+Cart
+========
+create table cart as select * from product where 1=2;

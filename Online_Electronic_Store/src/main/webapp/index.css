@@ -1,0 +1,69 @@
+@charset "ISO-8859-1";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 57vh;
+}
+
+
+.container {
+    text-align: center;
+    background-color:transparent;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2);
+    width: 370px;
+   
+}
+.container:hover{
+	background-color:white;
+	
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;    
+}
+
+p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+
+.login-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-link {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1em;
+    transition:background-color 0.5s;
+}
+
+.login-link:hover {
+    background-color: #0056b3;
+    box-shadow:5px 5px 5px rgba(0,0,0,0.6);
+}
+.login-link:active{
+	background-color:green;
+}
+

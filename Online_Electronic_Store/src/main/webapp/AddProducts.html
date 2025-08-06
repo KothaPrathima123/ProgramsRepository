@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Products - Admin Login</title>
+<style>
+ .div1{
+   background-color:#f4f4f4;
+   height:1000px;
+  
+   
+ }
+.div2{
+  text-align:center;
+  color:green;
+  font-weight:bold;
+  font-size:20px;
+  
+}
+.div3,.div4{
+margin-top:40px;
+  display:inline-block;
+  height:100px;
+  vertical-align:middle;
+  font-size:25px;
+  
+}
+.div3{
+ margin-left:520px;
+}
+.div4{
+  margin-left:13px;
+  
+  
+}
+</style>
+</head>
+<body>
+<div class="div1">
+
+<div style="text-align:center;color:green;font-weight:bold;font-size:32px;background-color:hwb(120 2% 70%);">Adding Product</div>
+<div class="div3">
+<form action="aps" method="post">
+  <lable>Product code</lable><br><br>
+<label>Product name</label><br><br>
+<label>Product company</label><br><br>
+<label>Product Price</label><br><br>
+<label>Product Quantity</label><br><br>
+</div>
+<div class="div4">
+         <input type="text" name="pcode" autofocus required><span style="color:red;">*</span><br><br>
+   <input type="text" name="pname" required><span style="color:red;">*</span><br><br>
+      <input type="text" name="pcompany"><br><br>
+        <input type="text" name="pprice"><br><br>
+         <input type="text" name="pqty"><br><br>
+          <input type="submit" value="Add product">
+</form>
+</div>
+</div>
+
+</body>
+</html>
